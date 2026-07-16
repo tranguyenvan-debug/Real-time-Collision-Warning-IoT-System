@@ -848,7 +848,7 @@ void setup() {
   // Kết nối WiFi
   Serial.println("📶 Kết nối WiFi...");
   WiFi.mode(WIFI_STA);
-  WiFi.begin("TRA GA", "traga10092003");
+  WiFi.begin("YOUR_ID_WIFI_HERE", "YOUR_PASSWORD_WIFI_HERE");
   
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
