@@ -4,9 +4,13 @@
 
 A real-time IoT-based collision warning system that detects obstacles, measures critical distances, and triggers instant local alerts along with a live radar-style web dashboard.
 
-![Status](https://img.shields.io/badge/status-prototype-yellow)
-![Platform](https://img.shields.io/badge/platform-ESP8266-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+<img width="1807" height="2560" alt="An_toan" src="https://github.com/user-attachments/assets/408cc67f-9355-43fa-a966-48ace2c98fbb" />
+
+<img width="1963" height="2560" alt="Khong_an_toan" src="https://github.com/user-attachments/assets/30fb5906-8cde-4d3b-81b6-4980d6b4201c" />
+
+<img width="1920" height="1080" alt="web_radar" src="https://github.com/user-attachments/assets/940a69b4-0c5f-4e6d-bbd9-3f159a9f466b" />
+
+<img width="1440" height="2560" alt="Prototyte_System_Warning" src="https://github.com/user-attachments/assets/f056c07c-c12f-4f61-b1ad-567219dee3c3" />
 
 </div>
 
@@ -19,6 +23,8 @@ A real-time IoT-based collision warning system that detects obstacles, measures 
 - Triggers a **buzzer alarm** whenever an obstacle enters the danger zone.
 - Displays real-time data on a **web-based radar dashboard** (sweeping radar view, updated every 100ms), accessible from any phone or computer on the same WiFi network.
 
+---
+
 ## ✨ Key Features
 
 - 📡 Real-time distance measurement using multiple HC-SR05 ultrasonic sensors.
@@ -27,6 +33,8 @@ A real-time IoT-based collision warning system that detects obstacles, measures 
 - 🌐 **Radar-style web dashboard** showing each sensor's live position/distance, switching color when a danger zone is entered.
 - 🔄 Automatic data refresh via a REST endpoint (`/laydulieu`) — no page reload needed.
 - ⚙️ Configurable safe/warning distance thresholds in the firmware.
+
+---
 
 ## 🧰 Hardware
 
@@ -44,6 +52,8 @@ A real-time IoT-based collision warning system that detects obstacles, measures 
 
 </div>
 
+---
+
 ### Pinout (example with 2 sensors)
 
 <div align="center">
@@ -60,6 +70,8 @@ A real-time IoT-based collision warning system that detects obstacles, measures 
 
 > ⚠️ **Note:** GPIO16 (D0) does not support PWM on the ESP8266 — it can only be driven digital HIGH/LOW, which is fine for an active buzzer.
 
+---
+
 ## 🖥️ System Architecture
 
 ```
@@ -73,6 +85,8 @@ A real-time IoT-based collision warning system that detects obstacles, measures 
                               Radar dashboard
                           (refreshes every 100ms via /laydulieu)
 ```
+
+---
 
 ## 🚀 Setup & Usage
 
@@ -120,6 +134,8 @@ upload_speed = 115200
    - The dashboard switches to "Unsafe" status (red/orange), showing which sensor(s) triggered it and their distance.
 4. Once all sensors return to a safe distance, the buzzer stops and the dashboard returns to "Safe" status (green).
 
+---
+
 ## 📁 Project Structure
 
 ```
@@ -130,6 +146,8 @@ Real-time-Collision-Warning-IoT-System/
 └── README.md
 ```
 
+---
+
 ## 🗺️ Roadmap
 
 - [ ] Add more sensors for full 360° coverage around the device.
@@ -137,9 +155,13 @@ Real-time-Collision-Warning-IoT-System/
 - [ ] Log alert history.
 - [ ] Improve response speed and accuracy at short range.
 
+---
+
 ## 📄 License
 
 This project is released under the [MIT License](./LICENSE).
+
+---
 
 ## 👤 Author
 
